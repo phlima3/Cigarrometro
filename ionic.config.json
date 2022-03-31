@@ -1,0 +1,7 @@
+{
+  "name": "cigarrometro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

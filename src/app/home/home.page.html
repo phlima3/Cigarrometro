@@ -1,0 +1,26 @@
+<div class="d-flex flex-column text-center h-100">
+  <label for="cigarro" class="my-4"> Quantidade de cigarros fumados </label>
+  <input
+    type="number"
+    placeholder="Ex: 2"
+    id="cigarro"
+    [(ngModel)]="quantidadeCigarro"
+  />
+  <label for="ano" class="my-4"> Quantidade de anos fumando </label>
+  <input
+    type="number"
+    placeholder="Ex: 5"
+    id="ano"
+    [(ngModel)]="quantidadeAnoFumando"
+  />
+  <button class="btn btn-light mt-4" (click)="calcularTempoVidaPerdido()">
+    Calcular
+  </button>
+  <h4>Tempo de vida perdido</h4>
+
+  <h2 class="text-danger">{{tempoVidaPerdido.toFixed(2)}} {{rotuloTempo}}</h2>
+  <div class=" image">
+     <img src="https://c.tenor.com/jeYb8iK3YfsAAAAi/skull-skullgif.gif">
+  </div>
+ 
+</div>
